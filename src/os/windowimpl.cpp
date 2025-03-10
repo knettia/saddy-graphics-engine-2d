@@ -354,6 +354,7 @@ bool sad::os::WindowImpl::chooseAndSetPixelFormatDescriptor(bool last_result)
     };
     pfd.cColorBits = 24;
     pfd.cAlphaBits = 8;
+    pfd.cStencilBits = 8;
 
     int      pixelformat=0; //Pixel format
     pixelformat = ChoosePixelFormat(m_handles.DC, &pfd);
@@ -535,6 +536,7 @@ bool sad::os::WindowImpl::chooseVisualInfo(bool lastresult)
         GLX_GREEN_SIZE, 1,
         GLX_BLUE_SIZE,  1,
         GLX_DEPTH_SIZE, 4,
+        GLX_STENCIL_SIZE, 8,
         None
     };
 
@@ -544,6 +546,7 @@ bool sad::os::WindowImpl::chooseVisualInfo(bool lastresult)
         GLX_GREEN_SIZE, 1,
         GLX_BLUE_SIZE, 1,
         GLX_DEPTH_SIZE, 4,
+        GLX_STENCIL_SIZE, 8,
         None
     };
 
