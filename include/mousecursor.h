@@ -125,6 +125,9 @@ public:
     /*! Removes handlers for handling sprite mouse cursor if needed to
      */
     virtual void removeHandlersIfNeeded();
+    /*! Renders cursor if it needs to: custom cursor flag is set and cursor is hidden
+     */
+    virtual void renderCursorIfNeedTo();
 protected:
     /*! Applies required cursor transformation for rendering 
         custom cursor
@@ -136,9 +139,6 @@ protected:
     /*! Hides default cursor
      */
     virtual void hideDefaultCursor();
-    /*! Renders cursor if need custom cursor flag is set and cursor is hidden
-     */
-    virtual void renderCursorIfNeedTo();
     /*! Shows custom cursor if need to
         \param[in] e event
      */
