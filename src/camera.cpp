@@ -6,9 +6,10 @@
 #include <glcontext.h>
 #include <fuzzyequal.h>
 #include <os/ubo.h>
+#include <opticksupport.h>
+
 
 #ifdef WIN32
-#include "opticksupport.h"
 // ReSharper disable once CppUnusedIncludeDirective
 #include <windows.h>
 #endif
